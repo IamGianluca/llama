@@ -10,7 +10,7 @@ ENV TOKENIZERS_PARALLELISM=false
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install ffmpeg libsm6 libxext6 -y
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6 python3.10-venv -y
 COPY requirements.txt /workspace/requirements.txt
 
 # install extra python packages
@@ -26,6 +26,7 @@ RUN pip install -e /workspace/blazingai
 ## dependencies for dev environment
 ## TODO: move to devcontainer
 ########################################
+RUN apt-get install python3.10-venv
 RUN apt-get install -y npm
 RUN apt-get install -y nodejs
 

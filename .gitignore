@@ -1,0 +1,25 @@
+.dotfiles
+
+# python cache and build
+__pycache__/
+ml.egg-info
+
+# notebook cache
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.vim/
+
+# kaggle auth
+kaggle.json
+
+# logs
+lightning_logs/
+logs/
+wandb/
+
+# executable
+run.sh
+
+data/

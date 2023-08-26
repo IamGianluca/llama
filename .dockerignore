@@ -1,0 +1,9 @@
+.dvc
+ckpts
+data
+logs
+lightning_logs
+nbs
+preds
+wandb
+*.zip

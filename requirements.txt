@@ -1,0 +1,17 @@
+peft
+accelerate
+bitsandbytes
+black
+black[jupyter]
+dvc
+flake8
+ipdb
+ipywidgets
+jupyterlab
+kaggle
+mypy
+pytest
+transformers
+usort
+wandb
+xformers

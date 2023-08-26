@@ -38,3 +38,6 @@ jupyter:
 
 install_nvim:
 	git clone https://github.com/IamGianluca/dotfiles.git .dotfiles && cd .dotfiles && ./install
+
+play:
+	CUDA_VISIBLE_DEVICES=0 python pipe/start.py

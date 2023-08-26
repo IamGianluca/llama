@@ -1,3 +1,4 @@
+import torch
 import transformers
 from torch import cuda
 
@@ -7,6 +8,7 @@ print(f"Device avialble is on {device}")
 
 model_id = "meta-llama/Llama-2-13b-chat-hf"
 bnb_config = transformers.BitsAndBytesConfig(
+    bnb_4bit_compute_dtype=torch.bfloat16,
     load_in_4bit=True,
 )
 

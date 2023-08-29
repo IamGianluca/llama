@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:23.06-py3
+FROM nvcr.io/nvidia/pytorch:23.07-py3
 
 # set environment variables
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
